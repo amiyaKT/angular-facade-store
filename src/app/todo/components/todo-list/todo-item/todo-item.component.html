@@ -1,0 +1,11 @@
+<p
+  [ngClass]="{
+    'line-through': todo.completed
+  }"
+>
+  {{ todo.title }}
+</p>
+<button (click)="todoStatus()">
+  {{ todo.completed ? "NOT DONE" : "DONE" }}
+</button>
+<button (click)="removeTodo()">DELETE</button>
